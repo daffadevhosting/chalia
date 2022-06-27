@@ -19,4 +19,13 @@
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/vendor/owl-carousel/owl.carousel.css">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/vendor/owl-carousel/owl.theme.css">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "{{site.appID}}",
+    });
+  });
+</script>
 </head>
