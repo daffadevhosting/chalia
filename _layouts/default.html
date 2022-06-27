@@ -23,6 +23,13 @@ layout: compress
       {% include footer.html %}
       {% include cart_side.html %}
       {% include jsScript.html %}
+<script>
+  if('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('{{ site.baseurl }}/sw.js')
+    })
+  }
+</script>
   </body>
 
 </html>

@@ -24,10 +24,3 @@ window.onscroll=function(){myFunction()};var header=document.getElementById("hea
 <script>
 const btn=document.querySelector(".toggle"),currentTheme=localStorage.getItem("theme");"dark"==currentTheme&&document.body.classList.add("dark-mode"),btn.addEventListener("click",function(){document.body.classList.toggle("dark-mode");let a="light";document.body.classList.contains("dark-mode")&&(a="dark"),localStorage.setItem("theme",a)})
 </script>
-<script>
-  if('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('{{ site.baseurl }}/sw.js')
-    })
-  }
-</script>
