@@ -1,0 +1,75 @@
+# Site Settings
+
+title: Chalia Grocery
+description: Food & Grocery store online.
+lokasi: Sumedang
+adminWa: 089531048917
+
+url: https://chaliagrocery.netlify.app
+sitekey: 6LfBwY0gAAAAACtYEWE7BXgxd5Nh-xPI9-VWmHSp
+dev: UnanG
+
+news: '10%  cashback untuk 100 pembeli pertama'
+code: 
+
+encoding: UTF-8
+permalink: /:title/
+paginate: 12
+paginate_path: "/blog/page/:num/"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  sass_dir: /assets/_sass
+  style: compressed
+
+collections:
+  products:
+    output: true
+
+defaults:
+- scope:
+    type: posts
+  values:
+    layout: post
+- scope:
+    type: pages
+  values:
+    layout: page
+- scope:
+    type: products
+  values:
+    layout: product
+- scope:
+    type: checkout
+  values:
+    layout: checkout
+
+sidebar_options:
+  - sidebar
+  - no-sidebar
+
+exclude: [lib, config.rb, .sass-cache, Capfile, config, log, Rakefile, Rakefile.rb, tmp, Gemfile, Gemfile.lock, README.md, LICENSE.md, node_modules, gulpfile.js, package.json]
+
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sass-converter
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  permalinks:
+    categories: '/category/:name/'
+    tags: '/tag/:name/'
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

@@ -1,0 +1,24 @@
+{
+  "name": "chalia-simpleCart",
+  "version": "0.1.1",
+  "description": "A simple cart grocery store online.",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daffadevhosting/"
+  },
+  "author": "UnanG",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/daffadevhosting/chalia-simpleCart/issues"
+  },
+  "homepage": "https://github.com/daffadevhosting/chalia-simpleCart/#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.6.3",
+    "gulp-uglify": "^2.1.2"
+  }
+}

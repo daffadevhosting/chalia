@@ -1,0 +1,125 @@
+/* Main Slider */
+.carousel-slider-main .owl-pagination {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.carousel-slider-main {
+    position: relative;
+	top: 12px;
+@include mobile {top: 0px;}
+}
+.carousel-slider-main .owl-prev, .carousel-slider-main .owl-next {
+    top: 46%;
+}
+/* Featured Product */
+.owl-carousel-featured {
+    border-right: 1px solid $border;
+}
+.product-header .badge {
+    background: #f2fef2 none repeat scroll 0 0;
+    border: 1px solid #51aa1b;
+    border-radius: 2px;
+    color: #51aa1b;
+    font-size: 12px;
+    font-weight: 500;
+    left: 22px;
+    padding: 4px 10px;
+    position: absolute;
+    top: 24px;
+    z-index: 9;
+}
+.product {
+    background: $bgProduct none repeat scroll 0 0;
+    border: 1px solid $border;
+    border-radius: 2px;
+    margin: 0 -1px 0 0;
+    padding: 20px;
+    position: relative;
+}
+.product-header .mdi-basket-check {
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 18px;
+    height: 22px;
+    line-height: 19px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 20px;
+    width: 22px;
+}
+.product-header .mdi-basket-off {
+    display: inline-block;
+    font-size: 18px;
+    height: 22px;
+    line-height: 19px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 22px;
+    width: 22px;
+    color: red!important;}
+
+.product-body .mdi-basket-check {
+    font-size: 14px;
+    color: #51aa1b;
+	} .mdi-basket-off {
+    font-size: 14px;
+    color: #dc3545!important;
+	}
+	h5 {
+    font-size: 17px;
+    font-weight: 900;
+    margin: 0;
+}
+.product-body h6 {
+    color: #9c9c9c;
+    font-size: 12px;
+    margin: 5px 0 14px;
+}
+
+.product-header img {
+	height: 200px;
+	margin: 0 0 18px;
+	object-fit: scale-down;
+	transform: scale(1);
+	transition-duration: 0.4s;
+    box-shadow: $shadow;
+@include mobile {
+    height: 400px;
+    background: $white;}
+}
+.product:hover .product-header img {
+	transform: scale(1.09);
+}
+.product-header {
+    text-align: center;
+}
+.offer-price {
+    color: #ff5722;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 16px;
+}
+.regular-price {
+    color: #666 !important;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    text-decoration: line-through;
+}
+.product-footer .btn {
+    border-radius: 49px !important;
+    font-size: 12px;
+    padding: 6px 12px;
+}
+.owl-carousel-featured .owl-prev {
+    left: -40px;
+	top: 43%;
+}
+.owl-carousel-featured .owl-next {
+    right: -40px;
+	top: 43%;
+}

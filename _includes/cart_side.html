@@ -1,0 +1,22 @@
+<div class="cart-sidebar">
+<div class="cart-sidebar-header">
+<h5>
+My Cart <span class="text-success"> <span class="simpleCart_quantity"></span> item</span> <a data-toggle="offcanvas" class="float-right" href="javascript:;"><i class="mdi mdi-close"></i>
+</a>
+</h5>
+</div>
+<div class="cart-sidebar-body">
+    {% include keranjang.html %}
+</div>
+<div class="cart-sidebar-footer">
+<div class="cart-store-details">
+<p>Sub Total <strong class="float-right"><span class="simpleCart_total"></span></strong></p>
+<p class="mb-5"> <strong class="float-right text-danger">*Belum Termasuk Ongkir</strong></p>
+<button onclick="checkOut()" class="btn btn-secondary btn-lg btn-block text-left" type="button"><span class="float-left"><i class="mdi mdi-cart-outline"></i> Proceed to Checkout </span><span class="float-right"><strong><span class="simpleCart_total"></span></strong> <span class="mdi mdi-chevron-right"></span></span></button>
+</div>
+</div>
+<script>
+function checkOut() {
+  location.replace("/checkout")
+}
+</script>

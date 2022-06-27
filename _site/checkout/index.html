@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="alternate" type="application/rss+xml" title="Chalia Grocery" href="http://localhost:4000/feed.xml">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Checkout | Chalia Grocery</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Checkout" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Food &amp; Grocery store online." />
+<meta property="og:description" content="Food &amp; Grocery store online." />
+<link rel="canonical" href="http://localhost:4000/checkout/" />
+<meta property="og:url" content="http://localhost:4000/checkout/" />
+<meta property="og:site_name" content="Chalia Grocery" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Checkout" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Food &amp; Grocery store online.","headline":"Checkout","url":"http://localhost:4000/checkout/"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel:200,700,900|Open+Sans:400,700|Roboto+Condensed:700">
+<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/vendor/icons/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+<script src="https://kit.fontawesome.com/d6e78495c8.js" crossorigin="anonymous"></script>
+<link href="/assets/vendor/select2/css/select2-bootstrap.css" />
+<link href="/assets/vendor/select2/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/vendor/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="/assets/vendor/owl-carousel/owl.theme.css">
+</head>
+
+  </head>
+  <body>
+      <div class="modal fade login-modal-main" id="location-modal">
+<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<div class="login-modal">
+<div class="row">
+<div class="col-lg-12 pad-left-0">
+<button type="button" class="close close-top-right" data-dismiss="modal" aria-label="Close" style="position:absolute;right:14px;color:#000!important;">
+<span aria-hidden="true"><i class="mdi mdi-close"></i></span>
+<span class="sr-only">Close</span>
+</button>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.3377895499455!2d108.03092500000001!3d-6.848441!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca74b2a99ff07f13!2sLapangan%20Tenis!5e0!3m2!1sid!2sid!4v1656254279105!5m2!1sid!2sid" width="100%" height="480" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+      <nav id="head_er" class="navbar navbar-light navbar-expand-lg bg-dark bg-faded sendaljepit-menu" itemscope itemtype="http://schema.org/WPHeader">
+<div class="container-fluid">
+<a class="navbar-brand" href="/"> <img src="/assets/img/logo-footer.png" alt="logo"> </a>
+    <div class="toggle">
+<div class="circle"></div>
+<div class="icon-mode">
+<div class="toggle-moon"><i class="fas fa-moon"></i></div>
+<div class="toggle-sun"><i class="fas fa-sun"></i></div>
+</div>
+</div>
+
+<div class="navbar-collapse" id="navbarNavDropdown">
+<div class="navbar-nav mr-auto mt-2 mt-lg-0 margin-auto top-categories-search-main">
+<div class="top-categories-search">
+<div class="input-group">
+<input class="form-control" placeholder="Search products in Your City" aria-label="Search products in Your City" type="text">
+<span class="input-group-btn">
+<button class="btn btn-secondary" type="button"><i class="mdi mdi-file-find"></i> Search</button>
+</span>
+</div>
+</div>
+</div>
+<div class="my-2 my-lg-0">
+<ul class="list-inline main-nav-right">
+<li class="list-inline-item geo-btn"><a href="javascript:;" data-target="#location-modal" data-toggle="modal" class="btn btn-link"><i class="mdi mdi-map-marker-circle"></i> Sumedang</a>
+</li>
+<li class="list-inline-item cart-btn display-none">
+<a href="javascript:;" data-toggle="offcanvas" class="btn btn-link border-none"><i class="mdi mdi-cart"></i> My Cart <small id="cart-menu" class="cart-value simpleCart_quantity"></small></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+
+            <section class="checkout-page section-padding">
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<div class="checkout-step">
+<div class="accordion" id="accordionExample">
+<div class="card checkout-step-one">
+<div class="card-header" id="headingOne">
+<h5 class="mb-0">
+<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+<span class="number"><i class="fas fa-mobile-alt fa-1x"></i></i></span> Verifikasi Nomor Whatsapp
+</button>
+</h5>
+</div>
+<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+<div class="card-body">
+<p style="color:#FF5722">Kami membutuhkan nomor telepon aktif Anda, agar kami dapat memberi tahu Anda tentang pesanan Anda.</p>
+ <form>
+<div class="form-row align-items-center">
+<div class="col-auto">
+<label class="sr-only">phone number</label>
+<div class="input-group mb-2">
+<input type="text" class="form-control" placeholder="Masukan Number Whatsapp">
+</div>
+</div>
+<div class="col-auto">
+<button type="button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="btn btn-success mb-2 btn-lg">LANJUT</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="card checkout-step-two">
+<div class="card-header" id="headingTwo">
+<h5 class="mb-0">
+<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+<span class="number"><i class="far fa-address-card fa-1x"></i></span> Alamat pengiriman
+</button>
+</h5>
+</div>
+<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+<div class="card-body">
+
+<form class='wrapHead data-form validate-form' id='whatsapp-order'>
+<input class='order noAdmin' id='AdminToko' value='089531048917' type='hidden'/>
+<div class="row">
+      <section class="col-sm-6">
+<div class="form-group">
+  <label class="control-label">Nama Lengkap</label>
+  <input id="nama" type="text" class="form-control border-form-control nama wajib" placeholder="Nama Lengkap">
+</div>
+      </section>
+
+      <section class="col-sm-6">
+<div class="form-group">
+  <label class="control-label">Nomor WhatsApp</label>
+  <input id="nomor" type="number" min="11" class="form-control border-form-control nomor wajib" placeholder="Nomor WhatsApp">
+</div>
+      </section>
+</div>
+<div class="row">
+      <section class="col-sm-6">
+<div class="form-group">
+  <label class="control-label">Alamat Email</label>
+  <input id="email" type="email" class="form-control border-form-control email wajib" placeholder="Alamat E-mail">
+</div>
+      </section>
+
+      <section class="col-sm-6">
+<div class="form-group">
+  <label class="control-label">Kurir</label>
+          <select class="select2 form-control border-form-control informasi wajib" value="J%26T Express" placeholder="Pilih Kurir " interface="action-sheet">
+            <option value="J%26T Express">J&amp;T Express</option>
+            <option value="JNE Express">JNE Express</option>
+            <option value="*Grab Express">*GrabExpress</option>
+            <option value="*GoSend">*GoSend</option>
+          </select>
+      </section>
+</div>
+
+<div class="row">
+<section class="col-sm-12">
+<div class="form-group">
+  <label class="control-label">Alamat Pengiriman</label>
+  <input id="alamat" class="form-control border-form-control alamat wajib" placeholder="Alamat Rumah">
+  <input id="kota" class="form-control border-form-control kota wajib" placeholder="Kota">
+  <input id="provinsi" class="form-control border-form-control provinsi wajib" placeholder="Provinsi">
+  <input id="kodepos" class="form-control border-form-control kodepos wajib" placeholder="Kode Pos">
+</div>
+</section>
+</div>
+<a class="button order" id='order'><button type="button" class="btn btn-success mb-2 btn-md">Send Order</button></a>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<h5 class="card-header">My Cart <span class="text-secondary float-right"><span class="simpleCart_quantity"></span> item</span></h5>
+<div class="card-body pt-0 pr-0 pl-0 pb-0">
+
+<style>
+.keranjang.dekstop{position:relative;width:60px;text-align:left;padding:5px 0;-webkit-box-ordinal-group:3;-ms-flex-order:3;order:3;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.notif-tambah-product{width:255px;position:absolute;z-index:99;font-size:14px;right:-10px;background:#00b35e;padding:10px 20px;opacity:1;display:none;color:#fff;top:65px;border-radius:15px;-webkit-box-shadow:0 2px 5px 0 rgba(56,56,56,.49);box-shadow:0 2px 5px 0 rgba(56,56,56,.49);}
+.keranjang .simpleCart_quantity{width:20px;height:20px;background:#ff0000;position:absolute;border-radius:100%;color:#ffffff;text-align:center;line-height:20px;font-size:12px;z-index:3}
+.keranjang.dekstop .simpleCart_quantity{top:3px;left:30px;}
+.keranjang-box{overflow-x:hidden;overflow-y:auto}
+.keranjang-box .close-keranjang{position:absolute;right:15px;padding:5px;border:1px solid #ddd;border-radius:15px;font-size:10px;font-weight:600}
+.keranjang-box .close-keranjang a.tombol-bukatutup{width:auto;background:transparent;color:#444444;padding:0 2px}
+.background-transparent-box{position:fixed;z-index:999;top:0;left:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.5);display:none;}
+.keranjang.dekstop .keranjang-icon{display:inline-block;padding:7px;margin:3px 0 3px 5px;border-radius:20px;width:24px;height:24px;cursor:pointer;-webkit-transition:all .2s;transition:all .2s}
+.keranjang.dekstop .keranjang-icon svg{height:22px;width:22px;display:inline-block;}
+.keranjang.dekstop .keranjang-icon path{fill:#ffffff;}
+@media only screen and (max-width:767px){.is-post .keranjang.mobile,.keranjang.dekstop{display:none;}.is-post .keranjang.dekstop{display:block;}.keranjang.mobile{position:relative;display:block;width:100%;text-align:center;}.keranjang.mobile .keranjang-icon{display:block;width:100%;height:100%;text-align:center;margin:0 auto;border-ridius:0;}.keranjang.mobile .keranjang-icon svg{position:relative;display:block;margin:0 auto;width:36px;height:36px;}.keranjang.mobile .keranjang-icon path{fill:#444444;}.keranjang.mobile .simpleCart_quantity{top:-5px;left:50%;}}
+/* Tabel Daftar Belanja*/
+.keranjang-box .simpleCart_items::-webkit-scrollbar{width:2px;background-color:transparent}
+.keranjang-box:hover .simpleCart_items::-webkit-scrollbar-thumb{background-color:#ddd;border-radius:5px}
+.keranjang-box .headerRow,.keranjang-box .item-price{display:block}
+.keranjang-box .simpleCart_items{color: #fff;max-height:-webkit-fill-available;overflow-y:auto;margin-bottom:20px;padding: 10px 10px 0 10px;/*box-shadow: inset #33333387 0 3px 1px -2px, inset #33333387 0 2px 2px 0, inset #33333387 0 1px 5px 0;*/border-radius: 3px;}
+.keranjang-box .itemRow{overflow:hidden;font-size:11px;line-height:1.5;width:100%;font-weight:700;display:inline-block;margin-bottom: 10px;}
+.keranjang-box .simpleCart_items::after {content: "";text-align: center;z-index: 0;position: absolute;top: 50px;left: 50%;padding: 10px;transform: translate(-50%,-45%);max-width: 500px;width: 90%;overflow: hidden;margin: auto;}
+.keranjang-box .item-thumb{float:left;}
+.keranjang-box .item-thumb img{object-fit:cover;width:95px;height:95px;border-radius:.3rem;float:left;margin:0 10px 0 0}
+.keranjang-box .item-decrement,.item-quantity,.keranjang-box .item-increment{font-size:12px;display:table-cell}
+.keranjang-box .item-berat {display: none;}
+.keranjang-box .item-totalberat {display: none;}
+.keranjang-box .item-name{font-size:14px;color:#fff;display:inline-block}
+.keranjang-box .item-pilihan1,.keranjang-box .item-pilihan2,.keranjang-box .item-varian1,.keranjang-box .item-varian2,.item-total{font-size:10px}
+.keranjang-box .item-pilihan1,.keranjang-box .item-pilihan2{float:left;margin-right:5px}
+.keranjang-box .item-quantity{padding:0px;font-size:11px;vertical-align:middle}
+.keranjang-box .item-total{color:#ff460c;font-weight:600;font-size:16px}
+.keranjang-box sp.sub-total{display:inline-block;color:#333}
+.keranjang-box .item-remove,.simpleCart_items .item-remove{float:right;display:block;position:relative;}
+.keranjang-box .item-link {display: none;margin: 3px -5px -5px;padding: 3px 5px;}.keranjang-box .simpleCart_increment{background-image:url("data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z' fill='%23a6a6ad'/></svg>")!important}
+.keranjang-box .simpleCart_increment,.keranjang-box .simpleCart_decrement{width:20px;height:20px;cursor:pointer;display:none;background-image:url("data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7' fill='%23a6a6ad'/></svg>");background-size:20px 20px;background-position:center center;background-repeat:no-repeat;vertical-align:middle;text-indent:-9999px}
+.keranjang-box .item-remove a.simpleCart_remove,.simpleCart_items .item-remove a.simpleCart_remove{display:block;width:20px;height:20px;background:url("data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8.46,11.88L9.87,10.47L12,12.59L14.12,10.47L15.53,11.88L13.41,14L15.53,16.12L14.12,17.53L12,15.41L9.88,17.53L8.47,16.12L10.59,14L8.46,11.88M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z' fill='%23a6a6ad'/></svg>") no-repeat;text-indent:-9999px;background-size:20px}
+.keranjang-box a.view-cart,.keranjang-box a.tombol-bukatutup{position:relative;display:inline-block;color:#ffffff;padding:5px 10px;border-radius:15px;text-align:center;width:40%}
+.keranjang-box a.view-cart{background:#20d374}
+.keranjang-box a.tombol-bukatutup{background:#ff5621}
+.keranjang-box a.view-cart:after{content: "Bayar Sekarang";}
+.keranjang-box a.view-cart.active:after{content: "Tutup";}
+.keranjang-box .ck-btn{margin-bottom:10px;text-align:center}
+.keranjang-box .harga-total{margin:0 0 10px;padding:0 8px;font-size:14px;font-weight:500}
+.keranjang-box span.simpleCart_total{font-size:16px;font-weight:600;color:#ff460c}
+#jam, #menit, #detik{display:inline-block;}
+#jam-digital,#hasil,.wrapper-footer,.fab{display:none;}
+.produk-page {margin:0px!important;}
+span.simpleCart_shipping, span.simpleCart_grandTotal {font-weight: 600;color:#ff460c;}
+</style>
+  <div class="keranjang-box simplecart-cart">
+    <div class="simpleCart_items"></div>
+</div>
+
+</div>
+</div>
+</section>
+<section class="section-padding bg-white border-top">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-sm-6">
+<div class="feature-box">
+<i class="mdi mdi-truck-fast"></i>
+<h6>Free & Next Day Delivery</h6>
+<p>Lorem ipsum dolor sit amet, cons...</p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="feature-box">
+<i class="mdi mdi-basket"></i>
+<h6>100% Satisfaction Guarantee</h6>
+<p>Rorem Ipsum Dolor sit amet, cons...</p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="feature-box">
+<i class="mdi mdi-tag-heart"></i>
+<h6>Great Daily Deals Discount</h6>
+<p>Sorem Ipsum Dolor sit amet, Cons...</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+      <section class="pt-4 pb-4 footer-bottom">
+<div class="container">
+<div class="row no-gutters">
+<div class="col-lg-6 col-sm-6">
+<img alt="sendaljepit logo" src="/assets/img//pay-logo.webp" style="width:45%;">
+</div>
+<div class="col-lg-6 col-sm-6">
+<p class="mt-1 mb-0">&copy; Copyright 2022 <strong class="text-dark">Chalia Grocery</strong>. All Rights Reserved<br>
+<small class="mt-0 mb-0">Made with <i class="mdi mdi-heart text-danger"></i> by <a href="https://askbootstrap.com/" target="_blank" class="text-primary"><span id="dev">UnanG</span></a>
+</small>
+</p>
+</div>
+</div>
+</div>
+</section>
+
+      <script src="/assets/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/js/simpleCart.js"></script>
+    <script src="/assets/js/formOrder.js"></script>
+    <script async src="/assets/js/main.js"></script>
+    <script async src="/assets/js/responsive-menu.js"></script>
+
+    
+
+    
+      <script async src="/assets/js/checkout.js"></script>
+    
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+<script src="/assets/vendor/select2/js/select2.min.js" type="text/javascript"></script>
+
+<script src="/assets/vendor/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+
+<script src="/assets/js/simpleCart.js" type="text/javascript"></script>
+<script src="/assets/js/custom.js" type="text/javascript"></script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("head_er");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<script>
+const btn = document.querySelector(".toggle");
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.add("dark-mode");
+    }
+btn.addEventListener("click", function() {
+  document.body.classList.toggle("dark-mode");
+  
+  let theme = "light";
+  if (document.body.classList.contains("dark-mode")) {
+    theme = "dark";
+    }
+  localStorage.setItem("theme", theme);
+});
+</script>
+
+  </body>
+</html>
+

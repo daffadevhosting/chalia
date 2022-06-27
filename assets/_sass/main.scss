@@ -1,0 +1,72 @@
+$overlay: #2196f380;
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #51aa1b;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$header: #2a2a39;
+$dark: #231f20;
+$border: #9e9e9e;
+$dropdown: #f9f9f9;
+$darkColor: #121212;
+$bgProduct: #9e9e9e26;
+$greyColor: #888;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$shadow: #00000033 0px 3px 1px -2px, #00000024 0px 2px 2px 0px, #0000001f 0px 1px 5px 0px;
+
+
+// Mobile breakpoints
+@mixin mobile {
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    @content;
+  }
+}
+
+body {
+  background: $light;
+  color: $dark;
+  font-family: $bodyFont;
+  transition: 0.5s;
+}
+.dark-mode, .preloader{
+    background-color: $dark !important;
+    color: $white !important;
+    .bg-white {
+    background-color: $dark !important;}
+    .text-dark {
+    color: $white !important;}
+    a:hover {color: $white}
+}
+h1, h2, h3, h4, h5, h6 {
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: $light; 
+}
+::-webkit-scrollbar-thumb {
+  background: $header; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary; 
+}
+
+.display-none {display:none;}
+

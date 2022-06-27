@@ -1,0 +1,52 @@
+<script src="{{site.baseurl}}/assets/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.statically.io/gh/daffadevhosting/js/014dae16526359492f549e0ff57b44accfb897f4/chalia/simpleCart.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/formOrder.js"></script>
+    <script async src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script async src="{{ site.baseurl }}/assets/js/responsive-menu.js"></script>
+
+    {% if page.url contains '/products/' %}
+      <script async src="{{ site.baseurl }}/assets/js/style-picker.js"></script>
+      <script async src="{{ site.baseurl }}/assets/js/add-to-cart.js"></script>
+    {% endif %}
+
+    {% if page.url == '/checkout/' %}
+      <script async src="{{ site.baseurl }}/assets/js/checkout.js"></script>
+    {% endif %}
+<script src="{{site.baseul}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+<script src="{{site.baseul}}/assets/vendor/select2/js/select2.min.js" type="text/javascript"></script>
+
+<script src="{{site.baseul}}/assets/vendor/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+
+<script src="{{site.baseul}}/assets/js/simpleCart.js" type="text/javascript"></script>
+<script src="{{site.baseul}}/assets/js/custom.js" type="text/javascript"></script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("head_er");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<script>
+const btn = document.querySelector(".toggle");
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.add("dark-mode");
+    }
+btn.addEventListener("click", function() {
+  document.body.classList.toggle("dark-mode");
+  
+  let theme = "light";
+  if (document.body.classList.contains("dark-mode")) {
+    theme = "dark";
+    }
+  localStorage.setItem("theme", theme);
+});
+</script>

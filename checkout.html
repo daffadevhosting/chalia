@@ -1,0 +1,142 @@
+---
+title: Checkout
+description:
+sitemap: false
+layout: checkout
+---
+
+<section class="checkout-page section-padding">
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<div class="checkout-step">
+<div class="accordion" id="accordionExample">
+<div class="card checkout-step-one">
+<div class="card-header" id="headingOne">
+<h5 class="mb-0">
+<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+<span class="number"><i class="fas fa-mobile-alt fa-1x"></i></i></span> Verifikasi Nomor Whatsapp
+</button>
+</h5>
+</div>
+<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+<div class="card-body">
+<p style="color:#FF5722">Kami membutuhkan nomor telepon aktif Anda, agar kami dapat memberi tahu Anda tentang pesanan Anda.</p>
+ <form>
+<div class="form-row align-items-center">
+<div class="col-auto">
+<label class="sr-only">phone number</label>
+<div class="input-group mb-2">
+<input type="text" class="form-control" placeholder="Masukan Number Whatsapp">
+</div>
+</div>
+<div class="col-auto">
+<button type="button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="btn btn-success mb-2 btn-lg">LANJUT</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="card checkout-step-two">
+<div class="card-header" id="headingTwo">
+<h5 class="mb-0">
+<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+<span class="number"><i class="far fa-address-card fa-1x"></i></span> Alamat pengiriman
+</button>
+</h5>
+</div>
+<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+<div class="card-body">
+
+<form class='wrapHead data-form validate-form' id='whatsapp-order'>
+<input class='order noAdmin' id='AdminToko' value='{{site.adminWa}}' type='hidden'/>
+<div class="row">
+      <section class="col-sm-6">
+<div class="form-group">
+  <label class="control-label">Nama Lengkap</label>
+  <input id="nama" type="text" class="form-control border-form-control nama wajib" placeholder="Nama Lengkap">
+</div>
+      </section>
+
+      <section class="col-sm-6">
+<div class="form-group">
+  <label class="control-label">Nomor WhatsApp</label>
+  <input id="nomor" type="number" min="11" class="form-control border-form-control nomor wajib" placeholder="Nomor WhatsApp">
+</div>
+      </section>
+</div>
+<div class="row">
+      <section class="col-sm-6">
+<div class="form-group">
+  <label class="control-label">Alamat Email</label>
+  <input id="email" type="email" class="form-control border-form-control email wajib" placeholder="Alamat E-mail">
+</div>
+      </section>
+
+      <section class="col-sm-6">
+<div class="form-group">
+  <label class="control-label">Kurir</label>
+          <select class="select2 form-control border-form-control informasi wajib" value="J%26T Express" placeholder="Pilih Kurir " interface="action-sheet">
+            <option value="J%26T Express">J&amp;T Express</option>
+            <option value="JNE Express">JNE Express</option>
+            <option value="*Grab Express">*GrabExpress</option>
+            <option value="*GoSend">*GoSend</option>
+          </select>
+      </section>
+</div>
+
+<div class="row">
+<section class="col-sm-12">
+<div class="form-group">
+  <label class="control-label">Alamat Pengiriman</label>
+  <input id="alamat" class="form-control border-form-control alamat wajib" placeholder="Alamat Rumah">
+  <input id="kota" class="form-control border-form-control kota wajib" placeholder="Kota">
+  <input id="provinsi" class="form-control border-form-control provinsi wajib" placeholder="Provinsi">
+  <input id="kodepos" class="form-control border-form-control kodepos wajib" placeholder="Kode Pos">
+</div>
+</section>
+</div>
+<a class="button order" id='order'><button type="button" class="btn btn-success mb-2 btn-md">Send Order</button></a>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<h5 class="card-header">My Cart <span class="text-secondary float-right"><span class="simpleCart_quantity"></span> item</span></h5>
+<div class="card-body pt-0 pr-0 pl-0 pb-0">
+{% include keranjang.html %}
+</div>
+</div>
+</section>
+<section class="section-padding bg-white border-top">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-sm-6">
+<div class="feature-box">
+<i class="mdi mdi-truck-fast"></i>
+<h6>Free & Next Day Delivery</h6>
+<p>Lorem ipsum dolor sit amet, cons...</p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="feature-box">
+<i class="mdi mdi-basket"></i>
+<h6>100% Satisfaction Guarantee</h6>
+<p>Rorem Ipsum Dolor sit amet, cons...</p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="feature-box">
+<i class="mdi mdi-tag-heart"></i>
+<h6>Great Daily Deals Discount</h6>
+<p>Sorem Ipsum Dolor sit amet, Cons...</p>
+</div>
+</div>
+</div>
+</div>
+</section>

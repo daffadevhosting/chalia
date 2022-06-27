@@ -1,0 +1,27 @@
+/* Footer */
+.footer {
+    border-bottom: 1px solid $border;
+    border-top: 1px solid $border !important;
+}
+.app img {
+    height: 32px;
+    margin: 0 11px 0 0;
+}
+.footer-bottom p{
+	line-height: 16px;
+}
+.footer-social a {
+    background: $dark none repeat scroll 0 0;
+    border-radius: 25px;
+    color: $light;
+    display: inline-block;
+    height: 27px;
+    line-height: 26px;
+    text-align: center;
+    width: 27px;
+}
+.logo-footer {
+    background: $dark;
+    padding: 10px;
+    border-radius: 5px;
+}

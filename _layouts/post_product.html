@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+{% include meta_head.html %}
+  </head>
+  <body>
+      {% include modal_login.html %}
+      {% include nav_bar.html %}
+      {% include breadcrumb.html %}
+            {{content}}
+      {% include footer.html %}
+      {% include cart_side.html %}
+      {% include jsScript.html %}
+  </body>
+</html>

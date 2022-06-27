@@ -1,0 +1,53 @@
+- nama_produk: Nama Produk
+  gambar: /assets/img/item/1.jpg
+  ketersediaan: Tersedia
+  check: basket-check
+  harga_awal: '2.000'
+  harga_diskon: '1.000'
+  diskon: '10% OFF'
+  link_produk: /products/contoh_product-1
+
+- nama_produk: Nama Produk
+  gambar: /assets/img/item/2.jpg
+  ketersediaan: Stok Habis
+  check: basket-off
+  harga_awal: '2.000'
+  harga_diskon: '1.000'
+  diskon: '10% OFF'
+  link_produk: /products/contoh_product-2
+
+- nama_produk: Nama Produk
+  gambar: /assets/img/item/3.jpg
+  ketersediaan: Tersedia
+  check: basket-check
+  harga_awal: '2.000'
+  harga_diskon: '1.000'
+  diskon: '10% OFF'
+  link_produk: /products/contoh_product-3
+
+- nama_produk: Nama Produk
+  gambar: /assets/img/item/4.jpg
+  ketersediaan: Tersedia
+  check: basket-check
+  harga_awal: '2.000'
+  harga_diskon: '1.000'
+  diskon: '10% OFF'
+  link_produk: /products/contoh_product-4
+
+- nama_produk: Nama Produk
+  gambar: /assets/img/item/5.jpg
+  ketersediaan: Tersedia
+  check: basket-check
+  harga_awal: '2.000'
+  harga_diskon: '1.000'
+  diskon: '10% OFF'
+  link_produk: /products/contoh_product-5
+
+- nama_produk: Nama Produk
+  gambar: /assets/img/item/6.jpg
+  ketersediaan: Tersedia
+  check: basket-check
+  harga_awal: '2.000'
+  harga_diskon: '1.000'
+  diskon: '10% OFF'
+  link_produk: /products/contoh_product-6

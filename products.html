@@ -1,0 +1,42 @@
+---
+title: All Products
+description: 
+sidebar_option: no-sidebar
+featured_image_path:
+facebook_image_path:
+layout: post_product
+---
+
+<section class="shop-list section-padding">
+<div class="container">
+<div class="row">
+<div class="col-md-9">
+<a href="#"><img class="img-fluid mb-3" src="/assets/img/shop.jpg" alt=""></a>
+<div class="row no-gutters">
+        {% for product in site.products %}
+<div class="col-md-4" itemscope itemtype="http://schema.org/Product">
+<div class="product">
+<a href="{{ product.url }}">
+<div class="product-header">
+ <span class="badge badge-success">{{ product.diskon }}</span>
+<img class="img-fluid" src="{{ product.gambar }}" alt="{{ product.nama_produk }}">
+<span class="veg text-success mdi mdi-{{product.check}}"></span>
+</div>
+<div class="product-body">
+<h5>{{ product.nama_produk }}</h5>
+<h6><strong><span class="mdi mdi-approval"></span> {{ product.ketersediaan }}</strong> - {{ product.berat }}</h6>
+</div>
+<div class="product-footer">
+<p class="offer-price mb-0">{{ product.harga_diskon }} <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">{{ product.harga_awal }}</span></p>
+</div>
+</a>
+</div>
+</div>
+        {% endfor %}
+            </div>
+        </div>
+      {% if page.sidebar_option == 'sidebar' %}{% include sidebar.html %}{% endif %}
+
+    </div>
+  </div>
+</section>

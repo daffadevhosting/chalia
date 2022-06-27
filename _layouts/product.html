@@ -1,0 +1,126 @@
+---
+layout: post_product
+---
+
+<section class="shop-single section-padding pt-3 simpleCart_shelfItem" itemscope itemtype="http://schema.org/Product">
+    <div class="container">
+        <div class="row">
+<div class="col-md-6">
+<div class="shop-detail-left">
+<div class="shop-detail-slider">
+<div class="favourite-icon">
+<a class="fav-btn" title="{{ page.diskon }}" data-placement="bottom" data-toggle="tooltip" href="javascript:;" data-original-title="{{ page.diskon }}"><i class="mdi mdi-tag-outline"></i></a>
+</div>
+<img alt="{{ page.nama_produk }}" src="{{ page.gambar }}" class="img-fluid item_thumb img-center" itemprop="image"/>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="shop-detail-right">
+<span class="badge badge-success">{{ page.diskon }}</span>
+<span class="regular-price"><i class="mdi mdi-tag-outline"></i> Rp. {{ page.harga_awal }}</span>
+<h2 class="item_name" itemprop="name">{{ page.nama_produk }}</h2>
+<h6><strong><span class="mdi mdi-{{page.check}}"> {{ page.ketersediaan }}</span></strong></h6>
+
+          {% for item in page.picker %}
+<p id="product-{{ forloop.index }}" {% unless forloop.first %}class="offer-price mb-0 display-none"{% endunless %}{% if forloop.first %} class="offer-price mb-0 item_price"{% endif %}>Harga Diskon : <span class="text-success">Rp. {{ item.harga }}</span></p>
+          {% endfor %}
+
+            <div class="plusminus">
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus btn btn-md" />
+                    <input type="number" step="1" min="1" max="12" name="quantity" value="1" title="Qty" class="item_Quantity input-text qty text" size="4" pattern="" inputmode="" disabled/>
+                    <input type="button" value="+" class="plus btn btn-md" />
+                 </div>
+               </div>
+
+            <div class="product-picker">
+        <ul class="opsi-produk" id="items">
+          {% for item in page.picker %}
+            <li id="product-{{ forloop.index }}"{% if forloop.first %} class="active item_ukuran"{% endif %} value="{{ item.sizes }}"> {{ item.sizes }}</li>
+          {% endfor %}
+        </ul>
+<div class="bottom-btn">
+<a href="javascript:;"><button type="button" class="btn btn-success btn-md"><i class="fab fa-whatsapp"></i> Kontak</button> </a>
+<a id="item_add" class="item_add" href="javascript:;"><button type="button" class="btn btn-info btn-md"><i class="mdi mdi-cart-outline"></i> Add To Cart</button> </a>
+</div>
+            </div>
+<div class="short-description">
+<h5 style="display:flex;justify-content:space-between;">
+Quick Overview
+<p class="float-right">Availability: <span>{{ page.ketersediaan }}</span></p>
+</h5>
+<p>{{ content }}</p>
+</div>
+<h6 class="mb-3 mt-4">Kenapa harus belanja di Chalia?</h6>
+<div class="row">
+ <div class="col-md-6">
+<div class="feature-box">
+<i class="mdi mdi-truck-fast"></i>
+<h6 class="text-info">Free Delivery</h6>
+<p>Lorem ipsum dolor...</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="feature-box">
+<i class="mdi mdi-basket"></i>
+<h6 class="text-info">100% Guarantee</h6>
+<p>Rorem Ipsum Dolor sit...</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+        <!--<section class="product-image">
+          <div class="styles">
+            {% for style in page.styles %}
+          		<div id="product-{{ forloop.index }}" class="style" {% unless forloop.first %}style="display: none"{% endunless %}>
+        				<img src="{{ style.image_path }}" itemprop="image">
+          		</div>
+          	{% endfor %}
+          </div>
+        </section>
+
+        <section class="product-details">
+          <h1 class="entry-title item_name" itemprop="name"></h1>
+          <p class="item_price">{{ page.price }}</p>
+          {{ content }}
+
+        	<div class="style-picker">
+            <p class="margin-bottom-0">Color:</p>
+            {% for style in page.styles %}
+              <div id="product-{{ forloop.index }}"{% if forloop.first %} class="item_color"{% endif %} style="background-color: {{ style.color }}"><span class="display-none">{{ style.name }}</span></div>
+            {% endfor %}
+        	</div>
+
+          <p class="margin-bottom-0">Size:</p>
+          <select class="item_size">
+            {% for size in page.sizes %}
+              <option value="{{ size }}"> {{ size }} </option>
+            {% endfor %}
+          </select>
+
+          <p class="margin-bottom-0">Quantity:</p>
+          <select class="item_Quantity">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+            <option value="7"> 7 </option>
+            <option value="8"> 8 </option>
+          </select>
+
+          <a id="item_add" class="item_add button" href="javascript:;"> Add to Cart </a></span>
+        </section>
+
+
+    </div>
+  </div>
+</div>-->

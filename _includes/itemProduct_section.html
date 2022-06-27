@@ -1,0 +1,31 @@
+<section class="product-items-slider section-padding">
+<div class="container">
+<div class="section-header">
+<h5 class="heading-design-h5">Terlaris Bulan Ini <span class="badge badge-info">10% OFF</span>
+<a class="float-right text-secondary" href="{{site.baseurl}}/products">Lihat Semua</a>
+</h5>
+</div>
+<div class="owl-carousel owl-carousel-featured">
+{% for item in site.data.terlaris %}
+<div class="item">
+<div class="product">
+<a href="{{item.url}}">
+<div class="product-header">
+<span class="badge badge-success">{{item.diskon}}</span>
+<img class="img-fluid" src="{{item.gambar}}" alt="{{item.nama_produk}}">
+</div>
+<div class="product-body">
+<h5>{{item.nama_produk}}</h5>
+<h6><strong><span class="mdi mdi-{{item.check}}"> {{item.ketersedian}}</span></strong></h6>
+</div>
+<div class="product-footer">
+<p class="offer-price mb-0">Rp. {{item.harga_diskon}} <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">Rp. {{item.harga_awal}}</span></p>
+</div>
+</a>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
