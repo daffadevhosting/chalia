@@ -8,6 +8,7 @@ layout: compress
 {% include meta_head.html %}
 
   <body {% if page.url == '/' %}class="home{% if page.sidebar_option != 'sidebar' %} full-width-content{% endif %}" {% elsif page.url contains '/blog/' or page.layout == 'archive' %}class="archive full-width-content" {% elsif page.url contains '/products/' %}class="product" {% elsif page.sidebar_option != 'sidebar' %}class="full-width-content" {% endif %}itemscope itemtype="http://schema.org/WebPage">
+      {% include preload.html %}
 
       <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>

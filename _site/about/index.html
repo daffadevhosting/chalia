@@ -41,6 +41,22 @@
 
 
   <body class="full-width-content" itemscope itemtype="http://schema.org/WebPage">
+      <style>
+.preloader{position:fixed;top:0;left:0;width:100%;height:100%;z-index:99999999999}.preloader .loading{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:14px arial;}.loading-text{position:fixed;bottom:0;margin-bottom:150px;left:50%;right:50%;font-family:system-ui}.rubberBand{-webkit-animation-name:rubberBand;animation-name:rubberBand;-webkit-animation-duration:1s;animation-duration:1s;animation: rubberBand 1s infinite;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes rubberBand{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes rubberBand{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}×
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".preloader").delay(2000).fadeOut(550);
+})
+</script>
+<div class="preloader">
+  <div class="loading">
+    <img class="rubberBand" src="/assets/img/logo.png" width="80">
+  </div>
+</div>
+
+
 
       <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -283,7 +299,7 @@ My Cart <span class="text-success"> <span class="simpleCart_quantity"></span> it
 .keranjang-box .simpleCart_items::-webkit-scrollbar{width:2px;background-color:transparent}
 .keranjang-box:hover .simpleCart_items::-webkit-scrollbar-thumb{background-color:#ddd;border-radius:5px}
 .keranjang-box .headerRow,.keranjang-box .item-price{display:block}
-.keranjang-box .simpleCart_items{color: #fff;max-height:-webkit-fill-available;overflow-y:auto;margin-bottom:20px;padding: 10px 10px 0 10px;/*box-shadow: inset #33333387 0 3px 1px -2px, inset #33333387 0 2px 2px 0, inset #33333387 0 1px 5px 0;*/border-radius: 3px;}
+.keranjang-box .simpleCart_items{color: #fff;max-height:-webkit-fill-available;overflow-y:auto;margin-bottom:0px;padding: 10px 10px 0 10px;/*box-shadow: inset #33333387 0 3px 1px -2px, inset #33333387 0 2px 2px 0, inset #33333387 0 1px 5px 0;*/border-radius: 3px;}
 .keranjang-box .itemRow{overflow:hidden;font-size:11px;line-height:1.5;width:100%;font-weight:700;display:inline-block;margin-bottom: 10px;}
 .keranjang-box .simpleCart_items::after {content: "";text-align: center;z-index: 0;position: absolute;top: 50px;left: 50%;padding: 10px;transform: translate(-50%,-45%);max-width: 500px;width: 90%;overflow: hidden;margin: auto;}
 .keranjang-box .item-thumb{float:left;}
