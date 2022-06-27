@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Chalia Grocery",
+  "background_color": "#231f20",
+  "theme_color": "#231f20",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "Toserba di Sumedang",
+  "icons": [{
+    "src": "/assets/favicon/maskable_icon.png",
+    "sizes":"any",
+    "type": "image/png",
+    "purpose": "any maskable"
+    },
+    {
+    "src": "/assets/favicon/maskable_icon_x512.png",
+    "sizes":"512x512",
+    "type": "image/png",
+    "purpose": "any maskable"
+  }]
+}

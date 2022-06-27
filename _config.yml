@@ -46,6 +46,10 @@ defaults:
     type: checkout
   values:
     layout: checkout
+- scope:
+    type: order-terkirim
+  values:
+    layout: none
 
 sidebar_options:
   - sidebar

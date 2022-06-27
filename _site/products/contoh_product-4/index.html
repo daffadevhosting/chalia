@@ -7,6 +7,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="alternate" type="application/rss+xml" title="Chalia Grocery" href="http://localhost:4000/feed.xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Chalia">
+<meta name="application-name" content="Chalia">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/assets/favicon/mstile-144x144.png">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#231f20">
+
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Contoh_product 4 | Chalia Grocery</title>
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -18,11 +31,11 @@
 <meta property="og:url" content="http://localhost:4000/products/contoh_product-4/" />
 <meta property="og:site_name" content="Chalia Grocery" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-06-28T02:49:58+07:00" />
+<meta property="article:published_time" content="2022-06-28T05:14:17+07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Contoh_product 4" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-28T02:49:58+07:00","datePublished":"2022-06-28T02:49:58+07:00","description":"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”","headline":"Contoh_product 4","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/products/contoh_product-4/"},"url":"http://localhost:4000/products/contoh_product-4/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-28T05:14:17+07:00","datePublished":"2022-06-28T05:14:17+07:00","description":"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”","headline":"Contoh_product 4","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/products/contoh_product-4/"},"url":"http://localhost:4000/products/contoh_product-4/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -93,9 +106,9 @@ $(".preloader").delay(2000).fadeOut(550);
 <div class="navbar-nav mr-auto mt-2 mt-lg-0 margin-auto top-categories-search-main">
 <div class="top-categories-search">
 <div class="input-group">
-<input class="form-control" placeholder="Search products in Your City" aria-label="Search products in Your City" type="text">
+<input class="form-control" placeholder="Cari Produk Yang Ada" aria-label="Search products in Your City" type="text">
 <span class="input-group-btn">
-<button class="btn btn-secondary" type="button"><i class="mdi mdi-file-find"></i> Search</button>
+<button class="btn btn-secondary" type="button"><i class="mdi mdi-file-find"></i> CARI</button>
 </span>
 </div>
 </div>
@@ -124,6 +137,7 @@ $(".preloader").delay(2000).fadeOut(550);
 </section>
 
             <section class="shop-single section-padding pt-3 simpleCart_shelfItem" itemscope itemtype="http://schema.org/Product">
+<p class="item_link display-none">http://localhost:4000/products/contoh_product-4/</p>
     <div class="container">
         <div class="row">
 <div class="col-md-6">
@@ -362,34 +376,10 @@ function checkOut() {
 <script src="/assets/vendor/owl-carousel/owl.carousel.js" type="text/javascript"></script>
 <script src="/assets/js/custom.js" type="text/javascript"></script>
 <script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("head_er");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+window.onscroll=function(){myFunction()};var header=document.getElementById("head_er"),sticky=header.offsetTop;function myFunction(){window.pageYOffset>sticky?header.classList.add("sticky"):header.classList.remove("sticky")}
 </script>
 <script>
-const btn = document.querySelector(".toggle");
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme == "dark") {
-  document.body.classList.add("dark-mode");
-    }
-btn.addEventListener("click", function() {
-  document.body.classList.toggle("dark-mode");
-  
-  let theme = "light";
-  if (document.body.classList.contains("dark-mode")) {
-    theme = "dark";
-    }
-  localStorage.setItem("theme", theme);
-});
+const btn=document.querySelector(".toggle"),currentTheme=localStorage.getItem("theme");"dark"==currentTheme&&document.body.classList.add("dark-mode"),btn.addEventListener("click",function(){document.body.classList.toggle("dark-mode");let a="light";document.body.classList.contains("dark-mode")&&(a="dark"),localStorage.setItem("theme",a)})
 </script>
 
   </body>

@@ -1,8 +1,15 @@
 ---
+layout: compress
 sitemap: false
 ---
 
-<style>footer{position:fixed;bottom:0;z-index:-1}.succes-content{position: absolute;left: 50%;top: 50%;background-color: #fff;transform: translate(-50%,-50%);box-shadow: 3px 3px 15px 7px #00000030;background-image: url(/images/success.gif);background-repeat: no-repeat;background-size: inherit;background-position: center;height: 90%;width: 90%;border-radius: 15px;overflow: hidden;z-index: 9999;}.text_il{position:relative;top:70%;text-align: center;z-index: 1;color:#000;}.btn-bayar{bottom: 0;position: absolute;width: 100%;}.success-text{display: flex;justify-content: center;position: relative;top: 150px;color: forestgreen;font-size: 20px;font-weight: 700;}</style>
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+{% include meta_head.html %}
+    <body>
+
+<style>body{background:#121212}footer{position:fixed;bottom:0;z-index:-1}.succes-content{position: absolute;left: 50%;top: 50%;background-color: #fff;transform: translate(-50%,-50%);box-shadow: 3px 3px 15px 7px #00000030;background-image: url(/images/success.gif);background-repeat: no-repeat;background-size: inherit;background-position: center;height: 90%;width: 90%;border-radius: 15px;overflow: hidden;z-index: 9999;}.text_il{position:relative;top:70%;text-align: center;z-index: 1;color:#000;}.btn-bayar{bottom: 0;position: absolute;width: 100%;display:inline-flex;align-items:center;justify-content:center;background:#2196f3;color:#fff;font-size:25px;}.success-text{display: flex;justify-content: center;position: relative;top: 150px;color: forestgreen;font-size: 20px;font-weight: 700;}</style>
 <!--<script>
     function pageRedirect() {
         window.location.replace("{{ site.baseurl }}/link_bayar");
@@ -16,3 +23,5 @@ sitemap: false
 
 <a href="{{site.baseurl}}/link_bayar" class="button btn-bayar small">Lanjut Bayar</a>
 </div>
+    </body>
+</html>
