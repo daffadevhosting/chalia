@@ -8,14 +8,14 @@ var gulp        = require('gulp'),
 
 //* Scripts
 gulp.task('themejs', function() {
-  gulp.src(['./js/jquery*.js', './js/responsive-menu.js'])
+  gulp.src(['./assets/js/jquery*.js', './assets/js/responsive-menu.js'])
     .pipe(concat('theme-concat.js'))
     .pipe(uglify())
     .pipe(rename({
       basename: "theme",
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./js'));
+    .pipe(gulp.dest('./assets/js'));
 });
 
 
