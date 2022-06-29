@@ -221,13 +221,16 @@
 .product-picker {
 @include mobile {
     position: fixed;
-    background: #212121;
+    background: #121212;
     color: #fff;
     width: -webkit-fill-available;
     padding: 10px;
     left: 0;
     bottom: 0;
-    z-index: 99;}
+    z-index: 99;
+    box-shadow: 0px -5px 10px -2px #818181;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;}
 }
 
 .bottom-btn {

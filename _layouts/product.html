@@ -44,7 +44,7 @@ layout: post_product
         </ul>
 <div class="bottom-btn">
 <a href="javascript:;"><button type="button" class="btn btn-success btn-md"><i class="fab fa-whatsapp"></i> Kontak</button> </a>
-<a id="item_add" class="item_add" href="javascript:;"><button type="button" class="btn btn-info btn-md"><i class="mdi mdi-cart-outline"></i> Add To Cart</button> </a>
+<a id="item_add" class="item_add" href="javascript:;"><button type="button" class="btn btn-info btn-md" onclick="confirm()"><i class="mdi mdi-cart-outline"></i> Add To Cart</button> </a>
 </div>
             </div>
 <div class="short-description">
@@ -75,53 +75,11 @@ Quick Overview
 </div>
 </div>
 </div>
+<script type="text/javascript">
+function confirm() {
+swal(" ", "item {{ page.nama_produk }} sudah masuk keranjang", "success", {
+  button: "okey",
+    });
+}
+</script>
 </section>
-
-        <!--<section class="product-image">
-          <div class="styles">
-            {% for style in page.styles %}
-          		<div id="product-{{ forloop.index }}" class="style" {% unless forloop.first %}style="display: none"{% endunless %}>
-        				<img src="{{ style.image_path }}" itemprop="image">
-          		</div>
-          	{% endfor %}
-          </div>
-        </section>
-
-        <section class="product-details">
-          <h1 class="entry-title item_name" itemprop="name"></h1>
-          <p class="item_price">{{ page.price }}</p>
-          {{ content }}
-
-        	<div class="style-picker">
-            <p class="margin-bottom-0">Color:</p>
-            {% for style in page.styles %}
-              <div id="product-{{ forloop.index }}"{% if forloop.first %} class="item_color"{% endif %} style="background-color: {{ style.color }}"><span class="display-none">{{ style.name }}</span></div>
-            {% endfor %}
-        	</div>
-
-          <p class="margin-bottom-0">Size:</p>
-          <select class="item_size">
-            {% for size in page.sizes %}
-              <option value="{{ size }}"> {{ size }} </option>
-            {% endfor %}
-          </select>
-
-          <p class="margin-bottom-0">Quantity:</p>
-          <select class="item_Quantity">
-            <option value="1"> 1 </option>
-            <option value="2"> 2 </option>
-            <option value="3"> 3 </option>
-            <option value="4"> 4 </option>
-            <option value="5"> 5 </option>
-            <option value="6"> 6 </option>
-            <option value="7"> 7 </option>
-            <option value="8"> 8 </option>
-          </select>
-
-          <a id="item_add" class="item_add button" href="javascript:;"> Add to Cart </a></span>
-        </section>
-
-
-    </div>
-  </div>
-</div>-->

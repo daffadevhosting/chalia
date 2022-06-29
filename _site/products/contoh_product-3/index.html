@@ -31,11 +31,11 @@
 <meta property="og:url" content="http://localhost:4000/products/contoh_product-3/" />
 <meta property="og:site_name" content="Chalia Grocery" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-06-28T05:14:17+07:00" />
+<meta property="article:published_time" content="2022-06-29T09:00:55+07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Contoh_product 3" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-28T05:14:17+07:00","datePublished":"2022-06-28T05:14:17+07:00","description":"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”","headline":"Contoh_product 3","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/products/contoh_product-3/"},"url":"http://localhost:4000/products/contoh_product-3/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-29T09:00:55+07:00","datePublished":"2022-06-29T09:00:55+07:00","description":"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”","headline":"Contoh_product 3","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/products/contoh_product-3/"},"url":"http://localhost:4000/products/contoh_product-3/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -51,8 +51,18 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/vendor/owl-carousel/owl.carousel.css">
 <link rel="stylesheet" href="/assets/vendor/owl-carousel/owl.theme.css">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "5e6a1bc8-9432-4403-b8dc-d7dfabf2a7d4",
+    });
+  });
+</script>
 </head>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
       <style>
@@ -190,7 +200,7 @@ $(".preloader").delay(2000).fadeOut(550);
         </ul>
 <div class="bottom-btn">
 <a href="javascript:;"><button type="button" class="btn btn-success btn-md"><i class="fab fa-whatsapp"></i> Kontak</button> </a>
-<a id="item_add" class="item_add" href="javascript:;"><button type="button" class="btn btn-info btn-md"><i class="mdi mdi-cart-outline"></i> Add To Cart</button> </a>
+<a id="item_add" class="item_add" href="javascript:;"><button type="button" class="btn btn-info btn-md" onclick="confirm()"><i class="mdi mdi-cart-outline"></i> Add To Cart</button> </a>
 </div>
             </div>
 <div class="short-description">
@@ -222,49 +232,14 @@ Quick Overview
 </div>
 </div>
 </div>
+<script type="text/javascript">
+function confirm() {
+swal(" ", "item Nama Produk Tiga sudah masuk keranjang", "success", {
+  button: "okey",
+    });
+}
+</script>
 </section>
-
-        <!--<section class="product-image">
-          <div class="styles">
-            
-          </div>
-        </section>
-
-        <section class="product-details">
-          <h1 class="entry-title item_name" itemprop="name"></h1>
-          <p class="item_price"></p>
-          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
-
-
-        	<div class="style-picker">
-            <p class="margin-bottom-0">Color:</p>
-            
-        	</div>
-
-          <p class="margin-bottom-0">Size:</p>
-          <select class="item_size">
-            
-          </select>
-
-          <p class="margin-bottom-0">Quantity:</p>
-          <select class="item_Quantity">
-            <option value="1"> 1 </option>
-            <option value="2"> 2 </option>
-            <option value="3"> 3 </option>
-            <option value="4"> 4 </option>
-            <option value="5"> 5 </option>
-            <option value="6"> 6 </option>
-            <option value="7"> 7 </option>
-            <option value="8"> 8 </option>
-          </select>
-
-          <a id="item_add" class="item_add button" href="javascript:;"> Add to Cart </a></span>
-        </section>
-
-
-    </div>
-  </div>
-</div>-->
 
       <section class="pt-4 pb-4 footer-bottom">
 <div class="container">
