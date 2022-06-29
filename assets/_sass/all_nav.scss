@@ -227,3 +227,7 @@
   width: 100%;
   z-index: 999;
 }
+
+.sticky + .site-inner {
+  padding-top: 70px;
+}

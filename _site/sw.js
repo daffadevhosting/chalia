@@ -25,14 +25,14 @@ registerRoute(
 )
 
 workbox.precaching.precacheAndRoute([
-  { url: '/', revision: '202206291045' },
-  { url: '/products/', revision: '202206291045' },
-  { url: '/blog/', revision: '202206291045' },
-  { url: '/cart/', revision: '202206291045' },
-  { url: '/checkout/', revision: '202206291045' },
-  { url: '/order-terkirim', revision: '202206291045' },
-  { url: '/link_bayar/', revision: '202206291045' },
-  { url: '/assets/css/style.css', revision: '202206291045' }
+  { url: '/', revision: '202206291222' },
+  { url: '/products/', revision: '202206291222' },
+  { url: '/blog/', revision: '202206291222' },
+  { url: '/cart/', revision: '202206291222' },
+  { url: '/checkout/', revision: '202206291222' },
+  { url: '/order-terkirim', revision: '202206291222' },
+  { url: '/link_bayar/', revision: '202206291222' },
+  { url: '/assets/css/style.css', revision: '202206291222' }
 ])
 
 registerRoute(
