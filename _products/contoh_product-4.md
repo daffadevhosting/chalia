@@ -1,8 +1,10 @@
 ---
 nama_produk: Nama Produk Empat
 gambar: /assets/img/item/4.jpg
-ketersediaan: Tersedia
-check: basket-check
+ketersediaan: Stok Habis
+check: basket-off
+nonaktif: enabled
+tagline: disabled
 harga_awal: '2.000'
 harga_diskon: '1.000'
 diskon: '10% OFF'

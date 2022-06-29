@@ -23,7 +23,7 @@ layout: post_product
 </div>
 <div class="product-body">
 <h5>{{ product.nama_produk }}</h5>
-<h6><strong><span class="mdi mdi-approval"></span> {{ product.ketersediaan }}</strong> - {{ product.berat }}</h6>
+<h6{% if product.nonaktif == 'enabled' %} class="text-danger"{% else %} class="text-success"{% endif %}><strong>{% if product.nonaktif == 'enabled' %}<span class="text-danger mdi mdi-close">{% else %}<span class="text-success mdi mdi-check">{% endif %}</span> {{ product.ketersediaan }}</strong></h6>
 </div>
 <div class="product-footer">
 <p class="offer-price mb-0">{{ product.harga_diskon }} <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">{{ product.harga_awal }}</span></p>

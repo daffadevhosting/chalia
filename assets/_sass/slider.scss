@@ -49,6 +49,11 @@
     text-align: center;
     top: 20px;
     width: 22px;
+@include mobile {
+        font-size: 50px;
+        right: 55px;
+        top: 40px;
+    }
 }
 .product-header .mdi-basket-off {
     display: inline-block;
@@ -60,7 +65,13 @@
     text-align: center;
     top: 22px;
     width: 22px;
-    color: red!important;}
+    color: red!important;
+@include mobile {
+        font-size: 50px;
+        right: 55px;
+        top: 40px;
+    }
+}
 
 .product-body .mdi-basket-check {
     font-size: 14px;

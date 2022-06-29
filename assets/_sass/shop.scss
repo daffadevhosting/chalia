@@ -238,7 +238,9 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.btn-info.disabled, .btn-info:disabled {
+    cursor: not-allowed;
+}
 .opsi-produk li.active {
   background-color: #1eaedb21;
   color: #1eaedb;

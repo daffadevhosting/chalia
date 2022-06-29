@@ -3,6 +3,8 @@ nama_produk: Nama Produk Dua
 gambar: /assets/img/item/2.jpg
 ketersediaan: Stok Habis
 check: basket-off
+nonaktif: enabled
+tagline: disabled
 harga_awal: '2.000'
 harga_diskon: '1.000'
 diskon: '10% OFF'

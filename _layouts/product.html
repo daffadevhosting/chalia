@@ -9,8 +9,9 @@ layout: post_product
 <div class="col-md-6">
 <div class="shop-detail-left">
 <div class="shop-detail-slider">
+
 <div class="favourite-icon">
-<a class="fav-btn" title="{{ page.diskon }}" data-placement="bottom" data-toggle="tooltip" href="javascript:;" data-original-title="{{ page.diskon }}"><i class="mdi mdi-tag-outline"></i></a>
+<a class="fav-btn" title="{{ page.diskon }}" data-placement="bottom" data-toggle="tooltip" href="javascript:;" data-original-title="{{ page.diskon }}">{% if page.tagline == 'enabled' %}<i class="mdi mdi-tag-outline"></i>{% endif %}</a>
 </div>
 <img alt="{{ page.nama_produk }}" src="{{ page.gambar }}" class="img-fluid item_thumb img-center" itemprop="image"/>
 </div>
@@ -20,7 +21,7 @@ layout: post_product
 <div class="col-md-6">
 <div class="shop-detail-right">
 <span class="badge badge-success">{{ page.diskon }}</span>
-<span class="regular-price"><i class="mdi mdi-tag-outline"></i> Rp. {{ page.harga_awal }}</span>
+<span class="regular-price"> <i class="mdi mdi-tag-outline"></i> Rp. {{ page.harga_awal }}</span>
 <h2 class="item_name" itemprop="name">{{ page.nama_produk }}</h2>
 <h6><strong><span class="mdi mdi-{{page.check}}"> {{ page.ketersediaan }}</span></strong></h6>
 
@@ -44,7 +45,7 @@ layout: post_product
         </ul>
 <div class="bottom-btn">
 <a href="javascript:;"><button type="button" class="btn btn-success btn-md"><i class="fab fa-whatsapp"></i> Kontak</button> </a>
-<a id="item_add" class="item_add" href="javascript:;"><button type="button" class="btn btn-info btn-md" onclick="confirm()"><i class="mdi mdi-cart-outline"></i> Add To Cart</button> </a>
+<a id="item_add" class="item_add" href="javascript:;"><button type="button" class="btn btn-info btn-md" onclick="confirm()" {% if page.nonaktif == 'enabled' %}title="Stok Habis" disabled{% endif %}><i class="mdi mdi-cart-outline"></i> Add To Cart</button> </a>
 </div>
             </div>
 <div class="short-description">

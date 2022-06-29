@@ -3,6 +3,8 @@ nama_produk: Nama Produk Tiga
 gambar: /assets/img/item/3.jpg
 ketersediaan: Tersedia
 check: basket-check
+button:
+tagline: enabled
 harga_awal: '2.000'
 harga_diskon: '1.000'
 diskon: '10% OFF'

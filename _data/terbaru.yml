@@ -27,8 +27,8 @@
 
 - nama_produk: Nama Produk
   gambar: /assets/img/item/4.jpg
-  ketersediaan: Tersedia
-  check: basket-check
+  ketersediaan: Stok Habis
+  check: basket-off
   harga_awal: '2.000'
   harga_diskon: '1.000'
   diskon: '10% OFF'
