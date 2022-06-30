@@ -232,15 +232,8 @@ $(".preloader").delay(2000).fadeOut(550);
 </div>
 </section>
 </div><span class="display-none simpleCart_total"></span>
-<a class="button order" id='order'><button type="button" class="btn btn-success mb-2 btn-lg">Send Order</button></a>
+<a class="button order" id='order'><button type="button" class="btn btn-success mb-2 btn-lg" onclick="waConfirm()">Send Order</button></a>
 </form>
-<style>.grecaptcha-badge{z-index:1;}</style>
-<div class="g-recaptcha"
-      data-sitekey="6LfBwY0gAAAAACtYEWE7BXgxd5Nh-xPI9-VWmHSp"
-      data-callback="order"
-      data-size="invisible">
-</div>
-<script>grecaptcha.execute();</script>
 </div>
 </div>
 </div>
@@ -334,6 +327,18 @@ span.simpleCart_shipping, span.simpleCart_grandTotal {font-weight: 600;color:#ff
 </div>
 </div>
 </section>
+<style>.grecaptcha-badge{z-index:1;}</style>
+<div class="g-recaptcha"
+      data-sitekey="6LfBwY0gAAAAACtYEWE7BXgxd5Nh-xPI9-VWmHSp"
+      data-callback="order"
+      data-size="invisible">
+</div>
+<script>grecaptcha.execute();</script>
+<script>
+function waConfirm() {
+  confirm("Kamu akan di alihkan ke whatsapp.");
+}
+</script>
 
       <section class="pt-4 pb-4 footer-bottom">
 <div class="container">

@@ -103,15 +103,8 @@ layout: checkout
 </div>
 </section>
 </div><span class="display-none simpleCart_total"></span>
-<a class="button order" id='order'><button type="button" class="btn btn-success mb-2 btn-lg">Send Order</button></a>
+<a class="button order" id='order'><button type="button" class="btn btn-success mb-2 btn-lg" onclick="waConfirm()">Send Order</button></a>
 </form>
-<style>.grecaptcha-badge{z-index:1;}</style>
-<div class="g-recaptcha"
-      data-sitekey="{{site.sitekey}}"
-      data-callback="order"
-      data-size="invisible">
-</div>
-<script>grecaptcha.execute();</script>
 </div>
 </div>
 </div>
@@ -153,3 +146,15 @@ layout: checkout
 </div>
 </div>
 </section>
+<style>.grecaptcha-badge{z-index:1;}</style>
+<div class="g-recaptcha"
+      data-sitekey="{{site.sitekey}}"
+      data-callback="order"
+      data-size="invisible">
+</div>
+<script>grecaptcha.execute();</script>
+<script>
+function waConfirm() {
+  confirm("Kamu akan di alihkan ke whatsapp.");
+}
+</script>
