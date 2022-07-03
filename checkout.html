@@ -14,47 +14,19 @@ layout: checkout
 <section class="checkout-page section-padding">
 <div class="container">
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-8 mb-3">
 <div class="checkout-step">
 <div class="accordion" id="accordionExample">
 <div class="card checkout-step-one">
 <div class="card-header" id="headingOne">
 <h5 class="mb-0">
 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-<span class="number"><i class="fas fa-mobile-alt fa-1x"></i></i></span> Verifikasi Nomor Whatsapp
+<span class="number"><i class="far fa-address-card fa-1x"></i></span> Alamat pengiriman
 </button>
 </h5>
 </div>
 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 <div class="card-body">
-<p style="color:#FF5722">Kami membutuhkan nomor telepon aktif Anda, agar kami dapat memberi tahu Anda tentang pesanan Anda.</p>
- <form>
-<div class="form-row align-items-center">
-<div class="col-auto">
-<label class="sr-only">phone number</label>
-<div class="input-group mb-2">
-<input type="text" class="form-control wajib" placeholder="Masukan Number Whatsapp" required>
-</div>
-</div>
-<div class="col-auto">
-<button type="button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="btn btn-success mb-2 btn-md">LANJUT</button>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-<div class="card checkout-step-two">
-<div class="card-header" id="headingTwo">
-<h5 class="mb-0">
-<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-<span class="number"><i class="far fa-address-card fa-1x"></i></span> Alamat pengiriman
-</button>
-</h5>
-</div>
-<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-<div class="card-body">
-
 <form class='wrapHead data-form validate-form' id='whatsapp-order'>
 <input class='order noAdmin' id='AdminToko' value='{{site.adminWa}}' type='hidden'/>
 <div class="row">
@@ -68,8 +40,9 @@ layout: checkout
       <section class="col-sm-6">
 <div class="form-group">
   <label class="control-label">Nomor WhatsApp</label>
-  <input id="nomor" type="number" min="11" class="form-control border-form-control nomor wajib" placeholder="Nomor WhatsApp">
+  <input id="nomor2" type="number" min="11" class="form-control border-form-control nomor wajib" placeholder="Nomor WhatsApp">
 </div>
+<div id="validasi"></div>
       </section>
 </div>
 <div class="row">
@@ -122,21 +95,21 @@ layout: checkout
 <section class="section-padding bg-white border-top">
 <div class="container">
 <div class="row">
-<div class="col-lg-4 col-sm-6">
+<div class="col-lg-4 mb-2 col-sm-6">
 <div class="feature-box">
 <i class="mdi mdi-truck-fast"></i>
 <h6>Free & Next Day Delivery</h6>
 <p>Lorem ipsum dolor sit amet, cons...</p>
 </div>
 </div>
-<div class="col-lg-4 col-sm-6">
+<div class="col-lg-4 mb-2 col-sm-6">
 <div class="feature-box">
 <i class="mdi mdi-basket"></i>
 <h6>100% Satisfaction Guarantee</h6>
 <p>Rorem Ipsum Dolor sit amet, cons...</p>
 </div>
 </div>
-<div class="col-lg-4 col-sm-6">
+<div class="col-lg-4 mb-2 col-sm-6">
 <div class="feature-box">
 <i class="mdi mdi-tag-heart"></i>
 <h6>Great Daily Deals Discount</h6>
