@@ -229,5 +229,8 @@
 }
 
 .sticky + .site-inner {
-  padding-top: 70px;
+  padding-top: 70px !important;
+}
+.sticky + .checkout-page {
+  padding-top: 70px !important;
 }
