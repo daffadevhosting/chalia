@@ -16,17 +16,18 @@ facebook_image_path:
 <div class="col-md-4" itemscope itemtype="http://schema.org/Product">
 <div class="product">
 <a href="{{ post.url }}">
-<div class="product-header">
- <span class="badge badge-success">{{ post.diskon }}</span>
+<div class="product-header">{% if post.stock == 'disabled' %}{% else %}
+ <span class="badge badge-success">{{ post.diskon }}</span>{% endif %}
 <img class="img-fluid" src="{{ post.gambar }}" alt="{{ post.nama_produk }}">
 <span class="veg text-success mdi mdi-{{post.check}}"></span>
 </div>
 <div class="product-body">
 <h5>{{ post.nama_produk }}</h5>
-<h6{% if post.nonaktif == 'enabled' %} class="text-danger"{% else %} class="text-success"{% endif %}><strong>{% if post.nonaktif == 'enabled' %}<span class="text-danger mdi mdi-close">{% else %}<span class="text-success mdi mdi-check">{% endif %}</span> {{ post.ketersediaan }}</strong></h6>
+<h6{% if post.stock == 'disabled' %} class="text-danger"{% else %} class="text-success"{% endif %}><strong>{% if post.stock == 'disabled' %}<span class="text-danger mdi mdi-close"> Stok Habis{% else %}<span class="text-success mdi mdi-check"> Stok Tersedia{% endif %}</span></strong></h6>
 </div>
 <div class="product-footer">
-<p class="offer-price mb-0">{{ post.harga_diskon }} <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">{{ post.harga_awal }}</span></p>
+<p class="offer-price mb-0">{{ post.harga_jual }} <i class="mdi mdi-tag-outline"></i><br>
+{% if post.stock == 'disabled' %}<span class="regular-price" style="text-decoration:none;">Tidak Ada Diskon</span>{% else %}<span class="regular-price">{{ post.harga_awal }}{% endif %}</span></p>
 </div>
 </a>
 </div>

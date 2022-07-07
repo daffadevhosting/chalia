@@ -256,6 +256,7 @@
   background-color: #fff;
   color: #1eaedb;
   border: 1px solid #1eaedb;
+  box-shadow: $shadow;
 }
 
 .opsi-produk li {
@@ -272,7 +273,7 @@
   @include mobile {
     width: 23%;}
 }
-.opsi-produk li:hover{background-color: #1eaedb21;}
+.opsi-produk li:hover{background-color: #fff;box-shadow: $shadow}
 }
 .swal-button {
     background-color: #4caf50;

@@ -10,35 +10,37 @@ layout: default
 
         <article class="page">
 
+<div class="container">
           <div class="archive-description">
-            <h1 class="archive-title">
-              {{ page.title }}
-              {% if page.type == 'category' %} Category Archives{% endif %}
-              {% if page.type == 'tag' %} Tag Archives{% endif %}
-            </h1>
+            <h3 class="archive-title">
+              {% if page.type == 'category' %} Category {{ page.title }}{% endif %}
+              {% if page.type == 'tag' %} Tag {{ page.title }}{% endif %}
+            </h3>
           </div>
-
+<div class="row no-gutters">
           {% for post in page.posts %}
-
-          <article class="post entry" itemscope itemtype="http://schema.org/CreativeWork">
-
-            <header class="entry-header">
-              <h1 class="entry-title" itemprop="headline"><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h1>
-              <p class="entry-meta">
-                <time class="entry-time" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-              </p>
-            </header>
-
-            <div class="entry-content" itemprop="text">
-              {% if post.featured_image_path %}<a class="entry-image-link" href="{{ post.url }}" aria-hidden="true"><img width="1024" height="682" src="{{ post.featured_image_path }}" class="post-image entry-image" alt="{{ post.title }}" itemprop="image"></a>{% endif %}
-              <p>{{ post.content | strip_html | strip | truncate: 440 }}&#x02026;</p>
-              <p><a class="more-link" href="{{ post.url }}">Continue Reading</a></p>
-            </div>
-
-          </article>
-
+<div class="col-md-3" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="product">
+<a href="{{ post.url }}">
+<div class="product-header">{% if post.stock == 'disabled' %}{% else %}
+ <span class="badge badge-success">{{ post.diskon }}</span>{% endif %}
+<img class="img-fluid" src="{{ post.gambar }}" alt="{{ post.nama_produk }}">
+<span class="veg text-success mdi mdi-{{post.check}}"></span>
+</div>
+<div class="product-body">
+<h5>{{ post.nama_produk }}</h5>
+<h6{% if post.stock == 'disabled' %} class="text-danger"{% else %} class="text-success"{% endif %}><strong>{% if post.stock == 'disabled' %}<span class="text-danger mdi mdi-close"> Stok Habis{% else %}<span class="text-success mdi mdi-check"> Stok Tersedia{% endif %}</span></strong></h6>
+</div>
+<div class="product-footer">
+<p class="offer-price mb-0">{{ post.harga_jual }} <i class="mdi mdi-tag-outline"></i><br>
+{% if post.stock == 'disabled' %}<span class="regular-price" style="text-decoration:none;">Tidak Ada Diskon</span>{% else %}<span class="regular-price">{{ post.harga_awal }}{% endif %}</span></p>
+</div>
+</a>
+</div>
+</div>
           {% endfor %}
-
+</div>
+  </div>
         </article>
 
     </div>
