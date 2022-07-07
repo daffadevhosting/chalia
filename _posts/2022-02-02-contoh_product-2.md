@@ -1,13 +1,10 @@
 ---
 nama_produk: Nama Produk Dua
 gambar: /assets/img/item/2.jpg
-ketersediaan: Stok Habis
-check: basket-off
-nonaktif: enabled
-tagline: disabled
+stock: 
 harga_awal: '2.000'
-harga_diskon: '1.000'
-diskon: '10% OFF'
+harga_jual: '150.000'
+diskon: '30% OFF'
 picker:
   - sizes: 1Gr
     awal: '3.000'
@@ -19,8 +16,8 @@ picker:
     awal: '12.000'
     harga: '10.000'
   - sizes: 1000Gr
-    awal: '52.000'
-    harga: '50.000'
+    awal: '150.000'
+    harga: '72.000'
 categories:
   - Buah-Buahan
 tags:

@@ -1,12 +1,9 @@
 ---
 nama_produk: Nama Produk Tiga
 gambar: /assets/img/item/3.jpg
-ketersediaan: Tersedia
-check: basket-check
-button:
-tagline: enabled
+stock: 
 harga_awal: '2.000'
-harga_diskon: '1.000'
+harga_jual: '10.000'
 diskon: '10% OFF'
 picker:
   - sizes: 1Gr

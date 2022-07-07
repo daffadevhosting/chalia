@@ -1,10 +1,9 @@
 ---
 nama_produk: Nama Produk Lima
 gambar: /assets/img/item/5.jpg
-ketersediaan: Tersedia
-check: basket-check
+stock: disabled
 harga_awal: '2.000'
-harga_diskon: '1.000'
+harga_jual: '1.000'
 diskon: '10% OFF'
 picker:
   - sizes: 1Gr

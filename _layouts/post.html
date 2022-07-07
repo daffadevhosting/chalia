@@ -20,13 +20,18 @@ layout: post_product
 
 <div class="col-md-6">
 <div class="shop-detail-right">
-<span class="badge badge-success">{{ page.diskon }}</span>
-<span class="regular-price"> <i class="mdi mdi-tag-outline"></i> Rp. {{ page.harga_awal }}</span>
-<h2 class="item_name" itemprop="name">{{ page.nama_produk }}</h2>
-<h6><strong><span class="mdi mdi-{{page.check}}"> {{ page.ketersediaan }}</span></strong></h6>
+{% if page.stock != 'disabled' %}
+<span class="badge badge-success">{{ page.diskon }}</span>{% else %}
+{% endif %}
+{% if page.stock != 'disabled' %}
+<span class="regular-price"> <i class="mdi mdi-tag-outline"></i> Rp. {{ page.harga_awal }}</span>{% else %}
+{% endif %}
+<h2 class="item_name mb-3" itemprop="name">{{ page.nama_produk }}</h2>
+<h6 class="mb-4"><strong>{% if page.stock != 'disabled' %}<span class="mdi mdi-basket-check"> Stok Tersedia</span>{% else %}<span class="mdi mdi-basket-off"> Stok Habis</span>{% endif %}
+</strong></h6>
 
           {% for item in page.picker %}
-<p id="product-{{ forloop.index }}" {% unless forloop.first %}class="offer-price mb-0 display-none"{% endunless %}{% if forloop.first %} class="offer-price mb-0 item_price"{% endif %}>Harga Diskon : <span class="text-success">Rp. {{ item.harga }}</span></p>
+<p id="product-{{ forloop.index }}" {% unless forloop.first %}class="offer-price mb-0 display-none"{% endunless %}{% if forloop.first %} class="offer-price mb-0 item_price"{% endif %}>Harga : <span class="text-success">Rp. {{ item.harga }}</span></p>
           {% endfor %}
 
             <div class="plusminus">
@@ -45,7 +50,7 @@ layout: post_product
         </ul>
 <div class="bottom-btn">
 <a href="javascript:;"><button type="button" class="btn btn-success btn-md"><i class="fab fa-whatsapp"></i> Kontak</button> </a>
-<a id="item_add" class="item_add" href="javascript:;"><button type="button" class="btn btn-info btn-md" onclick="confirm()" {% if page.nonaktif == 'enabled' %}title="Stok Habis" disabled{% endif %}><i class="mdi mdi-cart-outline"></i> Add To Cart</button> </a>
+<a id="item_add" class="item_add" href="javascript:;"><button type="button" class="btn btn-info btn-md" onclick="confirm()" {% if page.stock != 'disabled' %}{% else %}title="Stok Habis" disabled{% endif %}><i class="mdi mdi-cart-outline"></i> Add To Cart</button> </a>
 </div>
             </div>
 <div class="short-description">

@@ -2,6 +2,17 @@
 .table {
     color: #ffffff;
 }
+.shop-list {
+.product-header img {
+    height: 300px;
+    border-radius: 10px;
+    margin: 0 0 18px;
+    object-fit: scale-down;
+    transform: scale(1);
+    transition-duration: 0.4s;
+    box-shadow: $shadow;
+    background: #fff;}
+}
 .shop-filters .card-header .btn {
     color: #e96125;
     font-size: 15px;
@@ -119,7 +130,7 @@
 }
 .short-description {
     border-radius: 2px;
-    padding: 22px;
+    padding: 12px 22px;
 }
 .shop-detail-right .regular-price {
     font-size: 17px;
@@ -242,7 +253,7 @@
     cursor: not-allowed;
 }
 .opsi-produk li.active {
-  background-color: #1eaedb21;
+  background-color: #fff;
   color: #1eaedb;
   border: 1px solid #1eaedb;
 }

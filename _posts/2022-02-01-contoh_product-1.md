@@ -1,11 +1,10 @@
 ---
 nama_produk: Nama Produk Satu
 gambar: /assets/img/item/1.jpg
-ketersediaan: Tersedia
-check: basket-check
+stock: disabled
 harga_awal: '2.000'
-harga_diskon: '1.000'
-diskon: '10% OFF'
+harga_jual: '100.000'
+diskon: '50% OFF'
 picker:
   - sizes: 1Gr
     awal: '3.000'
@@ -17,8 +16,8 @@ picker:
     awal: '12.000'
     harga: '10.000'
   - sizes: 1000Gr
-    awal: '52.000'
-    harga: '50.000'
+    awal: '100.000'
+    harga: '100.000'
 categories: Sayuran
 tags: [burkol]
 ---

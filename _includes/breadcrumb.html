@@ -2,7 +2,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-12" style="font-size:12px;">
-<a href="{{site.baseurl}}/"><strong><span class="mdi mdi-home"></span> Home</strong></a> <span class="mdi mdi-chevron-right"></span>{% for category in page.categories %} <a href="{{site.baseurl}}/category/{{ category | slugify }}" rel="category">{{ category }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %} <span class="mdi mdi-chevron-right"></span> <span>{{page.title}}</span>
+<a href="{{site.baseurl}}/"><strong><span class="mdi mdi-home"></span> Home</strong></a> <span class="mdi mdi-chevron-right"></span>{% for category in page.categories %} <a href="{{site.baseurl}}/category/{{ category | slugify }}" rel="category">{{ category }}</a>{% unless forloop.last %}, {% endunless %} <span class="mdi mdi-chevron-right"></span>{% endfor %} <span>{{page.title}}</span>
 </div>
 </div>
 </div>
