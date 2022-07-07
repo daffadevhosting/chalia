@@ -15,12 +15,12 @@
 }
 /* Featured Product */
 .owl-carousel-featured {
-    border-right: 1px solid $border;
+    border-right: 0px solid $border;
 }
 .product-header .badge {
     background: #f2fef2 none repeat scroll 0 0;
     border: 1px solid #51aa1b;
-    border-radius: 2px;
+    border-radius: 25px;
     color: #51aa1b;
     font-size: 12px;
     font-weight: 500;
@@ -32,10 +32,9 @@
 }
 .product {
     background: $bgProduct none repeat scroll 0 0;
-    border: 1px solid $border;
-    border-radius: 2px;
-    margin: 0 -1px 0 0;
-    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
     position: relative;
 }
 .product-header .mdi-basket-check {
@@ -93,6 +92,7 @@
 
 .product-header img {
 	height: 200px;
+    border-radius: 10px;
 	margin: 0 0 18px;
 	object-fit: scale-down;
 	transform: scale(1);

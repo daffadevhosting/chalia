@@ -1,10 +1,10 @@
 ---
-title: All Products
+layout: post_product
+title: All posts
 description: 
 sidebar_option: no-sidebar
 featured_image_path:
 facebook_image_path:
-layout: post_product
 ---
 
 <section class="shop-list section-padding">
@@ -12,21 +12,21 @@ layout: post_product
 <div class="row">
 <div class="col-md-9">
 <div class="row no-gutters">
-        {% for product in site.products %}
+        {% for post in site.posts %}
 <div class="col-md-4" itemscope itemtype="http://schema.org/Product">
 <div class="product">
-<a href="{{ product.url }}">
+<a href="{{ post.url }}">
 <div class="product-header">
- <span class="badge badge-success">{{ product.diskon }}</span>
-<img class="img-fluid" src="{{ product.gambar }}" alt="{{ product.nama_produk }}">
-<span class="veg text-success mdi mdi-{{product.check}}"></span>
+ <span class="badge badge-success">{{ post.diskon }}</span>
+<img class="img-fluid" src="{{ post.gambar }}" alt="{{ post.nama_produk }}">
+<span class="veg text-success mdi mdi-{{post.check}}"></span>
 </div>
 <div class="product-body">
-<h5>{{ product.nama_produk }}</h5>
-<h6{% if product.nonaktif == 'enabled' %} class="text-danger"{% else %} class="text-success"{% endif %}><strong>{% if product.nonaktif == 'enabled' %}<span class="text-danger mdi mdi-close">{% else %}<span class="text-success mdi mdi-check">{% endif %}</span> {{ product.ketersediaan }}</strong></h6>
+<h5>{{ post.nama_produk }}</h5>
+<h6{% if post.nonaktif == 'enabled' %} class="text-danger"{% else %} class="text-success"{% endif %}><strong>{% if post.nonaktif == 'enabled' %}<span class="text-danger mdi mdi-close">{% else %}<span class="text-success mdi mdi-check">{% endif %}</span> {{ post.ketersediaan }}</strong></h6>
 </div>
 <div class="product-footer">
-<p class="offer-price mb-0">{{ product.harga_diskon }} <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">{{ product.harga_awal }}</span></p>
+<p class="offer-price mb-0">{{ post.harga_diskon }} <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">{{ post.harga_awal }}</span></p>
 </div>
 </a>
 </div>

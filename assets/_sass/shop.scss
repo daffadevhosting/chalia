@@ -55,7 +55,7 @@
     color: #fff;
     font-size: 17px;
     height: 35px;
-    line-height: 34px;
+    line-height: 36px;
     position: absolute;
     right: 20px;
     text-align: center;
@@ -275,6 +275,6 @@
 .swal-icon--success:before {
     background: #231f20;
     }
-.swal-text {
+.swal-text, .swal-title {
     color: #ffffffdb;
     }

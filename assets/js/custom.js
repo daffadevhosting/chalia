@@ -203,13 +203,14 @@ $(document).ready(function() {
          }
     });
 	
+$(".like-btn").click(function(){$(this).toggleClass("clicked"),event.preventDefault()}),$(".fav_btn span").click(function(){var a=$(this).attr("id");$(this).hasClass("clicked")?localStorage.setItem(a,"true"):localStorage.removeItem(a,"true")}),$(".fav_btn span").each(function(){var a=$(this).attr("id");"true"==localStorage.getItem(a)?$(this).addClass("clicked"):$(this).removeClass("clicked")})
+
+});
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-xxxxxxxxx', 'auto');
+ga('create', 'UA-187631685-1', 'auto');
 ga('send', 'pageview');
-
-});

@@ -14,9 +14,9 @@ news: '10%  cashback untuk 100 pembeli pertama'
 code: 
 
 encoding: UTF-8
-permalink: /:title/
+permalink: /products/:title/
 paginate: 12
-paginate_path: "/blog/page/:num/"
+paginate_path: "/products/page/:num/"
 
 markdown: kramdown
 kramdown:
@@ -27,7 +27,7 @@ sass:
   style: compressed
 
 collections:
-  products:
+  blogs:
     output: true
 
 defaults:
@@ -40,9 +40,9 @@ defaults:
   values:
     layout: page
 - scope:
-    type: products
+    type: blogs
   values:
-    layout: product
+    layout: blog
 - scope:
     type: checkout
   values:
@@ -70,6 +70,7 @@ jekyll-archives:
   enabled:
     - categories
     - tags
+  layout: archive
   permalinks:
     categories: '/category/:name/'
     tags: '/tag/:name/'
