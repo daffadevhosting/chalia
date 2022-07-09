@@ -16,7 +16,7 @@ code:
 encoding: UTF-8
 permalink: /products/:title/
 paginate: 12
-paginate_path: "/products/page/:num/"
+paginate_path: "/products/page-:num/"
 
 markdown: kramdown
 kramdown:
@@ -56,10 +56,9 @@ sidebar_options:
   - sidebar
   - no-sidebar
 
-exclude: [lib, config.rb, .sass-cache, Capfile, config, log, Rakefile, Rakefile.rb, tmp, Gemfile, Gemfile.lock, README.md, LICENSE.md, node_modules, gulpfile.js, package.json]
-
 gems:
   - jekyll-feed
+  - jekyll-figure
   - jekyll-sitemap
   - jekyll-archives
   - jekyll-paginate
@@ -79,3 +78,5 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+exclude: [lib, config.rb, .sass-cache, Capfile, config, log, Rakefile, Rakefile.rb, tmp, Gemfile, Gemfile.lock, README.md, LICENSE.md, node_modules, gulpfile.js, package.json]

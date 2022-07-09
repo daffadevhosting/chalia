@@ -1,10 +1,10 @@
 ---
 nama_produk: Nama Produk Lima
 gambar: /assets/img/item/5.jpg
-stock: disabled
+stock: 
 harga_awal: '2.000'
 harga_jual: '1.000'
-diskon: '10% OFF'
+diskon: '50% OFF'
 picker:
   - sizes: 1Gr
     awal: '3.000'
