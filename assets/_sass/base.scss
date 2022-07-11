@@ -99,7 +99,7 @@ a:focus {
     text-decoration: none;
 }
 .select2-container--default .select2-selection--single {
-    background-color: #000;
+    background-color: #fff;
     border: 1px solid #000;
     border-radius: 2px;
     width: 100%;
@@ -155,7 +155,7 @@ a:focus {
 }
 .card {
     background-clip: border-box;
-    background-color: #292929;
+    background-color: transparent;
     border: 1px solid #353535;
     border-radius: 2px;
     display: flex;
@@ -334,8 +334,8 @@ a:focus {
 .form-control {
     border-radius: 2px;
     font-size: 14px;
-    background-color: #000;
     border: 1px solid #000000;
+    margin-bottom: 5px;
 }
 .modal-body {
     background: #272727;

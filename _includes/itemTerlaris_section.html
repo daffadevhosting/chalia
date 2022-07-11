@@ -9,17 +9,24 @@
 {% for item in site.data.terlaris %}
 <div class="item">
 <div class="product">
-<a href="{{item.url}}">
+<a {% if item.stock != 'disabled' %}href="{{item.url}}" {% else %}href="javascript:;" onclick="swal ( 'Oops','Product {{item.nama_produk}} Sudah Habis','error')"{% endif %}>
 <div class="product-header">
-<span class="badge badge-success">{{item.diskon}}</span>
+{% if item.stock != 'disabled' %}
+<span class="badge badge-success">{{item.diskon}}</span>{% else %}{% endif %}
 <img class="img-fluid" src="{{item.gambar}}" alt="{{item.nama_produk}}">
+{% if item.stock != 'disabled' %}
+{% else %}<div class="overlays"><h3 class="text-white fw-bold pt-50">HABIS</h3></div>{% endif %}
 </div>
 <div class="product-body">
 <h5>{{item.nama_produk}}</h5>
-<h6><strong><span class="mdi mdi-{{item.check}}"> {{item.ketersedian}}</span></strong></h6>
+<h6><strong>
+{% if item.stock != 'disabled' %}<span class="mdi mdi-basket-check"> Stok Tersedia</span>{% else %}
+<span class="mdi mdi-basket-off"> Stok Habis</span>{% endif %}
+</strong></h6>
 </div>
 <div class="product-footer">
-<p class="offer-price mb-0">Rp. {{item.harga_diskon}} <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">Rp. {{item.harga_awal}}</span></p>
+<p class="offer-price mb-0">Rp. {{item.harga_jual}} <i class="mdi mdi-tag-outline"></i>
+{% if item.stock != 'disabled' %}<br><span class="regular-price">Rp. {{item.harga_diskon}}</span>{% else %}<br><small class="text-muted" style="font-size:11px;">Diskon Tidak Ada</small>{% endif %}</p>
 </div>
 </a>
 </div>

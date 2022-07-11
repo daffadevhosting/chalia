@@ -9,7 +9,7 @@
 {% for item in site.posts limit:6 %}
 <div class="item">
 <div class="product">
-<a href="{{item.url}}">
+<a {% if item.stock != 'disabled' %}href="{{item.url}}" {% else %}href="javascript:;" onclick="swal ( 'Oops','Product {{item.nama_produk}} Sudah Habis','error')"{% endif %}>
 <div class="product-header">
 {% if item.stock != 'disabled' %}
 <span class="badge badge-success">{{item.diskon}}</span>{% else %}{% endif %}

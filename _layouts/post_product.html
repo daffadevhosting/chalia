@@ -8,7 +8,7 @@ layout: compress
 {% include meta_head.html %}
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
-  <body>
+  <body onload="checkUsername()">
       {% include preload.html %}
       {% include modal_login.html %}
       {% include nav_bar.html %}

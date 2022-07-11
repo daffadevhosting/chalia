@@ -1,53 +1,59 @@
-- nama_produk: Nama Produk
+- nama_produk: Nama Produk 7
   gambar: /assets/img/item/7.jpg
   ketersedian: Stok Habis
   check: basket-off
-  harga_awal: '20.000'
+  harga_jual: '20.000'
   harga_diskon: '10.000'
   diskon: '10% OFF'
   link_produk: /
+  stock: disabled
 
-- nama_produk: Nama Produk
+- nama_produk: Nama Produk 8
   gambar: /assets/img/item/8.jpg
   ketersedian: Stok Habis
   check: basket-off
-  harga_awal: '20.000'
+  harga_jual: '20.000'
   harga_diskon: '10.000'
   diskon: '10% OFF'
   link_produk: /
+  stock: disabled
 
-- nama_produk: Nama Produk
+- nama_produk: Nama Produk 9
   gambar: /assets/img/item/9.jpg
   ketersedian: Tersedia
   check: basket-check
-  harga_awal: '20.000'
+  harga_jual: '20.000'
   harga_diskon: '10.000'
   diskon: '10% OFF'
   link_produk: /
+  stock: disabled
 
-- nama_produk: Nama Produk
+- nama_produk: Nama Produk 10
   gambar: /assets/img/item/10.jpg
   ketersedian: Tersedia
   check: basket-check
-  harga_awal: '20.000'
+  harga_jual: '20.000'
   harga_diskon: '10.000'
   diskon: '10% OFF'
   link_produk: /
+  stock: disabled
 
-- nama_produk: Nama Produk
+- nama_produk: Nama Produk 11
   gambar: /assets/img/item/11.jpg
   ketersedian: Stok Habis
   check: basket-off
-  harga_awal: '20.000'
+  harga_jual: '20.000'
   harga_diskon: '10.000'
   diskon: '10% OFF'
   link_produk: /
+  stock: disabled
 
-- nama_produk: Nama Produk
+- nama_produk: Nama Produk 12
   gambar: /assets/img/item/12.jpg
   ketersedian: Tersedia
   check: basket-check
-  harga_awal: '20.000'
+  harga_jual: '20.000'
   harga_diskon: '10.000'
   diskon: '10% OFF'
   link_produk: /
+  stock: disabled
